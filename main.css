@@ -1,0 +1,253 @@
+:root {
+     --background-pos: center;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    position: relative;
+    min-height: 100% ;
+    font-family: 'TT Norms', 'Segoe UI', Tahoma, Arial, sans-serif !important;
+    font-variant-ligatures: none;
+    font-size: 12px;
+    background-color: rgb(201, 123, 153);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden;
+    background-attachment: fixed;
+    color: #392839;
+    -webkit-font-smoothing: antialiased;
+    border: 0;
+    margin: 0;
+}
+
+.layout {
+    max-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.layout_index::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: block;
+    filter: brightness(0.5);
+    background-size: cover;
+    background-image: var(--background-img);
+    background-position: var(--background-pos);
+
+    
+}
+
+
+.header__container {
+    background: rgb(230, 177, 190);
+    justify-content: space-between;
+    width: 80vh;
+    top: 50%;
+    left: 0;
+    transform: translateY(-100%) translateX(-50%) translateY(50%) rotate(90deg);
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden;
+    pointer-events: visible;
+}
+
+.header__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 64px;
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+.header {
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    padding-left: 32px;
+}
+
+.header {
+    position: relative;
+    z-index: 9;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.layout__header {
+    height: 100vh;
+    pointer-events: none;
+}
+
+.header__bars {
+    display: none;
+}
+
+.header__bars {
+    position: relative;
+    width: 16px;
+    height: 10px;
+    z-index: 2;
+}
+
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    will-change: transform;
+    height: 100%;
+}
+div {
+    border: 0;
+    margin: 0;
+}
+
+.nav {
+    height: 100%;
+}
+
+.nav__list {
+    flex-direction: row;
+    height: 100%;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+
+h1 {
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    margin-right: 25px;
+    margin-bottom: 0 !important;
+    height: 100%;
+}
+
+.nav__item {
+    display: block;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+.nav__link {
+    position: relative;
+    font-size: 13px !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__link {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
+    word-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cit, code, del, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, legend, label {
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    margin: 1px;
+    padding: 10px;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+.nav__link_active:after {
+    opacity: 1 !important;
+}
+
+.nav__link:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    background: #000;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+
+.header__logo {
+    transform: rotate(-90deg);
+}
+
+.header__logo {
+    position: relative;
+    margin-top: -2px;
+    margin-left: 15px;
+    z-index: 2;
+    transition: 0.2s ease;
+}
+
+.logo {
+    display: block;
+    width: 45px;
+    height: 45px;
+}
+
+.layout_content_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("./img/backgroundSiteGeneral.png") center center no-repeat;
+    background-size: cover;
+}
+
+
