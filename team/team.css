@@ -286,7 +286,7 @@ a:-webkit-any-link {
 .teamLogo {
     width: 100%;
     height: 250px;
-    background: url("/img/about_img.png") center center no-repeat;
+    background: url(./../img/about_img.png) center center no-repeat;
     background-size: cover;
 }
 
