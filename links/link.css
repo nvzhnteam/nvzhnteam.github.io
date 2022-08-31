@@ -2,6 +2,7 @@
 
 
 body {
+    overflow-y: auto;
     position: fixed;
     width: 100%;
     min-height: 100vh;
@@ -45,8 +46,6 @@ body {
     background-size: cover;
     background-image: var(--background-img);
     background-position: var(--background-pos);
-
-    
 }
 
 
@@ -274,9 +273,10 @@ a:-webkit-any-link {
 
 .links_place {
     position: absolute;
-    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin-top: 351px;
-    height: 100%;
     padding: 5px;
     padding-top: 10px;
     top: 0;
