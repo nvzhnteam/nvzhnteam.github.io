@@ -137,7 +137,8 @@
         font-size: 36px;
     }
     .links_place {
-        overflow-y: scroll;
+        
+        overflow-y: auto;
         margin-top: 155px;
     }
     .links_list{

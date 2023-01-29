@@ -2,7 +2,6 @@
 
 
 body {
-    overflow-y: auto;
     position: fixed;
     width: 100%;
     min-height: 100vh;
@@ -46,6 +45,8 @@ body {
     background-size: cover;
     background-image: var(--background-img);
     background-position: var(--background-pos);
+
+    
 }
 
 
@@ -247,10 +248,15 @@ a:-webkit-any-link {
     height: 250px;
     left: 0px;
     top: 0;
-    background: url(./../img/about_img.png) center center no-repeat;
-    background-size: cover;
 }
 
+.layout_content_img img {
+    width: 100%;
+    height: 250px;
+    left: 0px;
+    top: 0;
+    text-align: center;
+}
 
 
 
@@ -273,10 +279,9 @@ a:-webkit-any-link {
 
 .links_place {
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    min-width: 100%;
     margin-top: 351px;
+    height: 100%;
     padding: 5px;
     padding-top: 10px;
     top: 0;
